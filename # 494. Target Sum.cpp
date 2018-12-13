@@ -25,3 +25,20 @@ public:
         return mem[p][sum]=find(p+1,nums,sum+nums[p],mem)+find(p+1,nums,sum-nums[p],mem);
     }
 };
+// O(ns) pseudo polynomial dp, s is the target sum. Most dp problems visits continuous states and 
+// this is a great example to use hashtable to visit valid states only.
+
+class Solution {
+public:
+    int findTargetSumWays(vector<int>& nums, int S) {
+        int n = nums.size();
+        vector<unordered_map<int,int>> dp(n+1);
+        dp[0][0]=1;
+        for(int i=0;i<n;i++)
+            for(auto &p:dp[i]) {
+                dp[i+1][p.first+nums[i]] += p.second; 
+                dp[i+1][p.first-nums[i]] += p.second;
+            }
+        return dp[n][S];
+    }
+};
