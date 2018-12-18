@@ -42,3 +42,19 @@ public:
         return dp[n][S];
     }
 };
+// O(ns) time, linear space dp.
+class Solution {
+public:
+    int findTargetSumWays(vector<int>& nums, int S) {
+        unordered_map<int,int> cur({{0,1}}), nxt, *p_cur=&cur, *p_nxt=&nxt;
+        for(int i=0;i<nums.size();i++) {
+            for(auto &p:*p_cur) {
+                (*p_nxt)[p.first+nums[i]] += p.second; 
+                (*p_nxt)[p.first-nums[i]] += p.second;
+            }
+            swap(p_cur,p_nxt);
+            p_nxt->clear();
+        }
+        return (*p_cur)[S];
+    }
+};
