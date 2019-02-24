@@ -14,7 +14,6 @@ vector<int> twoSum(vector<int> &numbers, int target)
 				result.push_back(i + 1);			
 				return result;
 			}
-
 	            //number was not found. Put it in the map.
 			hash[numbers[i]] = i;
 		}
