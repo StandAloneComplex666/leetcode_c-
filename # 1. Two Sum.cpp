@@ -6,6 +6,7 @@ vector<int> twoSum(vector<int> &numbers, int target)
 		vector<int> result;
 		for (int i = 0; i < numbers.size(); i++) {
 			int numberToFind = target - numbers[i];
+			
 	            //if numberToFind is found in map, return them
 			if (hash.find(numberToFind) != hash.end()) {
 	                    //+1 because indices are NOT zero based
