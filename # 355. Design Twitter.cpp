@@ -57,7 +57,6 @@ public:
             following[followerID] = set<int>();
         following[followerID].insert(followeeID);
     }
-
     /** Follower unfollows a followee. If the operation is invalid, it should be a no-op. */
     void unfollow(int followerID, int followeeID) {
         if (following.find(followerID) != following.end() && following[followerID].find(followeeID) != following[followerID].end())
