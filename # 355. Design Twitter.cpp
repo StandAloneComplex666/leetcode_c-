@@ -48,7 +48,6 @@ public:
         
         return output;
     }
-    
     /** Follower follows a followee. If the operation is invalid, it should be a no-op. */
     void follow(int followerID, int followeeID) {
         if(followerID == followeeID)
