@@ -44,6 +44,7 @@ public:
                 iters.erase(iters.begin()+maxIndex);
                 ends.erase(ends.begin()+maxIndex);
             }
+            
         }
         return output;
     }
