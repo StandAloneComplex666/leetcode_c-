@@ -45,7 +45,6 @@ public:
                 ends.erase(ends.begin()+maxIndex);
             }
         }
-        
         return output;
     }
     /** Follower follows a followee. If the operation is invalid, it should be a no-op. */
