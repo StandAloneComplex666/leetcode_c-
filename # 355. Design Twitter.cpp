@@ -29,8 +29,7 @@ public:
                     iters.push_back(news[*i].rbegin());
                     ends.push_back(news[*i].rend());
                 }
-        }
-        
+        }   
         vector<int> output;
         int maxIndex = 0;
         while (output.size() < 10 && !iters.empty()) {
