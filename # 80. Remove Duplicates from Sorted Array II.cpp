@@ -15,6 +15,5 @@ public int removeDuplicates(int[] nums) {
             }
             nums[ptr++] = nums[i++];
         }
-
         return ptr;
     }
