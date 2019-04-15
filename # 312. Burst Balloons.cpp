@@ -4,7 +4,6 @@ public:
         int n = nums.size();
         nums.insert(nums.begin(), 1);
         nums.push_back(1);
-        
         vector<vector<int>> c(n+2, vector<int>(n+2, 0));
         
         for (int l=1; l<=n; ++l){
