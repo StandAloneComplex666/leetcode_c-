@@ -8,7 +8,6 @@ public:
         int diff = accumulate(nums.begin(), nums.end(), 0, bit_xor<int>());
         // Get its last set bit
         diff &= -diff;
-
         // Pass 2 :
         vector<int> rets = {0, 0}; // this vector stores the two numbers we will return
         for (int num : nums)
