@@ -5,6 +5,7 @@ public:
         for (int i=0; i<N; ++i) vs.push_back(i+1);
         return counts(N, vs);
     }
+    
     int counts(int n, vector<int>& vs) {
         if (n <= 0) return 1;
         int ans = 0;
@@ -16,5 +17,6 @@ public:
             }
         }
         return ans;
+
     }
 };
