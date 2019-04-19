@@ -8,6 +8,7 @@
  * };
  */
  
+ 
 class Solution {
 public:
     TreeNode* trimBST(TreeNode* root, int L, int R) {
