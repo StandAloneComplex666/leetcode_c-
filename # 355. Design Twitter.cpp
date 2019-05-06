@@ -5,9 +5,8 @@ public:
     unordered_map<int,set<int>> following;
     /** Initialize your data structure here. */
     Twitter():news(),timeStamp(0),following() {
-        
+   
     }
-    
     /** Compose a new tweet. */
     void postTweet(int userID, int tweetID) {
         if (news.find(userID) == news.end())
