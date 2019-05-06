@@ -27,4 +27,3 @@ private:
         return interval1.end>interval2.start;
     }
 };
-
