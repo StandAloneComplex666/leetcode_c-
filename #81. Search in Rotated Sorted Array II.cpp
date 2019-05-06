@@ -16,7 +16,6 @@ public:
           }else{
               hi--;
           }
-          
     }
     return A[lo] == target ? true : false;
   }
