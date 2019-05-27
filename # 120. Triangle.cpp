@@ -12,6 +12,6 @@ public:
         }
     }
     return minlen[0];
-    
+   
 }
 };
