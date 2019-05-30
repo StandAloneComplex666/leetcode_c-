@@ -6,7 +6,6 @@ public:
     MyStack() {
         
     }
-    
     /** Push element x onto stack. */
     void push(int x) {
         std::queue<int> temp_queue;
