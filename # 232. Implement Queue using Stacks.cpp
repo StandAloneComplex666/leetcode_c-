@@ -3,8 +3,7 @@
 class MyQueue {
 public:
     /** Initialize your data structure here. */
-    MyQueue() {
-        
+    MyQueue() {   
     }
     /** Push element x to the back of queue. */
     void push(int x) {
