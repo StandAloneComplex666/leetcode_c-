@@ -5,7 +5,6 @@ public:
     /** Initialize your data structure here. */
     MyQueue() {   
     }
-    
     /** Push element x to the back of queue. */
     void push(int x) {
         std::stack<int> temp_stack;
