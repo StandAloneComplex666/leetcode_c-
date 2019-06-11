@@ -38,7 +38,6 @@ public:
 private:
     std::queue<int> _data;
 };
-
 /**
  * Your MyStack object will be instantiated and called as such:
  * MyStack obj = new MyStack();
