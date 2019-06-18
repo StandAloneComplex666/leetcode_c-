@@ -20,12 +20,10 @@ public:
         }
         return q.size();
     }
-    
     int flipAll(int t, int n) {
         int x = (1 << n) - 1;
         return t ^ x;
     }
-    
     int flipEven(int t, int n) {
         for (int i = 0; i < n; i += 2) {
             t ^= (1 << i);
