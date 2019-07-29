@@ -25,4 +25,3 @@ vector<char> formatted;
   return result;
 }
 };
-
