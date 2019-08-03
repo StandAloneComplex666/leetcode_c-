@@ -31,6 +31,7 @@ public:
         return t;
     }
     
+    
     int flipOdd(int t, int n) {
         for (int i = 1; i < n; i += 2) {
             t ^= (1 << i);
