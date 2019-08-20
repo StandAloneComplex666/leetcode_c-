@@ -23,5 +23,5 @@ vector<char> formatted;
   }
   std::reverse (result.begin(), result.end());
   return result;
-}
+  }
 };
