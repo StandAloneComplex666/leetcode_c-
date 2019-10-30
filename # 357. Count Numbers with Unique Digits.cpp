@@ -14,4 +14,3 @@ public:
         return(A[0]);
     }
 };
-
