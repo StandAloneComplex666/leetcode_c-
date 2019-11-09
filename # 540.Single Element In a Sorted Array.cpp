@@ -8,7 +8,7 @@ public:
             ret ^=i;
         }
         return ret;
-    }
+    
 };
 //my version
 class Solution {
