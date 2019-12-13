@@ -27,5 +27,4 @@ public:
             reverse(res.begin(), res.end());
             return res;
         }
-    };
-    
+    }; 
