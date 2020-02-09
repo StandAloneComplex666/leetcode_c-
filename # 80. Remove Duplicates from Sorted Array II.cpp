@@ -17,3 +17,4 @@ public int removeDuplicates(int[] nums) {
         }
         return ptr;
     }
+    
